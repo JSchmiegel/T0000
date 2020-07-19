@@ -28,12 +28,16 @@
 \usepackage[marginal,multiple]{footmisc}
 \usepackage{listings}
 \usepackage{amssymb}
-
 \usepackage{color}
+\usepackage{newfloat}
 %********************************
 
-%own Command
-\newcommand{\namerefIT}[1]{\ref{#1} \textit{\nameref{#1}}}
+%Anhang-Environment
+\DeclareFloatingEnvironment[fileext=lob, listname={Anhang}, placement=htbp]{anhang}
+\renewcommand{\theanhang}{\Alph{anhang}.}
+
+%own Command Link to Chapter
+\newcommand{\nameref}[1]{\ref{#1} \textbf{\nameref{#1}}}
 
 %insert Literaturverzeichnis.bib
 \bibliography{Literaturverzeichnis}
@@ -96,7 +100,10 @@
 \printbibliography[title=Literaturverzeichnis]
 
 %Insert ./Kapitel/Anhang.tex
-\appendix
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Anhang}
+\listofanhang
 \include{Kapitel/Anhang}
 
 \end{document}
