@@ -3,6 +3,8 @@
 *.blg
 *.lof
 *.lot
+*.log
+*.loAnhang
 *.out
 *.run.xml
 *.synctex.gz
