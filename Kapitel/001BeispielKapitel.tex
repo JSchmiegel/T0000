@@ -1,0 +1,37 @@
+\chapter{Beispiel} \label{ch:Beispiel}
+\begin{quote}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra pellentesque sollicitudin. Suspendisse placerat eros eu ante tincidunt, vel mollis ipsum lacinia. Integer a nibh erat. Phasellus accumsan nisi sed diam vulputate, quis dignissim metus sagittis. Nullam tempor ante sit amet est ullamcorper semper sed vitae risus. Nulla varius sit amet turpis et porta. Suspendisse neque dui, faucibus a metus at, lobortis tristique turpis. Proin ac euismod dolor, nec tincidunt lorem. Vivamus quis interdum elit, non dapibus felis. Pellentesque eu mattis neque. Integer eu eleifend ipsum. Donec ultricies porta erat, molestie eleifend augue tincidunt at.\end{quote}
+Nam fringilla egestas ornare. Nam faucibus fermentum nisi, ut faucibus nibh. Ut elementum leo dolor, quis facilisis ante imperdiet sit amet. Etiam nunc purus, aliquet quis est malesuada, blandit maximus enim. Praesent massa velit, pretium eu massa eget, mattis cursus ante. Praesent vitae dui vel elit tempor ornare. Nullam risus risus, posuere sed tincidunt id, condimentum vitae orci. Praesent rhoncus ligula id ante porttitor luctus. Vivamus tincidunt condimentum vulputate. 
+
+\section{Donec aliquam} \label{sec:DonecAliquam}
+ Donec aliquam vulputate gravida. Curabitur efficitur nisl quis tellus lacinia, vehicula facilisis libero molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim eros, laoreet at lorem et, dictum congue leo. Etiam justo neque, interdum et elit sed, porttitor fermentum augue. Curabitur molestie risus urna, quis porttitor tortor lobortis sit amet. Etiam vel mi ac tellus \ref{tab:UtInterdum}.
+ 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{p{7.5cm} | p{7.5cm}}
+\multicolumn{1}{c}{\textbf{UT}} & \multicolumn{1}{c}{\textbf{INTERDUM}} \\
+\hline
+\textbf{Aliquam} Aliquam ante ex, suscipit vitae porttitor vitae, tincidunt ut diam. & \textbf{Sed posuere} Sed posuere felis quis tempor rutrum. Donec ac sem lectus. Sed rutrum, ligula a varius lobortis, tortor nunc facilisis nisi, eu sagittis quam lectus sit amet est. \\
+\textbf{Nam laoreet} Nam laoreet bibendum facilisis. Morbi sed ex odio. Suspendisse potenti &  \textbf{Vivamus viverra:} Vivamus viverra congue magna, et imperdiet dolor lacinia ac. Mauris imperdiet, elit in scelerisque commodo, lacus arcu mattis sapien, eget tincidunt urna felis ac ipsum.\\
+\end{tabular}
+\end{center}
+\caption{Ut interdum, odio in lobortis feugiat, ligula augue rutrum quam.}
+\label{tab:UtInterdum}
+\end{table}
+
+
+Etiam sodales sagittis metus, vitae laoreet leo sollicitudin sit amet. Aenean hendrerit sapien non purus tempus gravida. Vivamus tincidunt ut augue et consectetur. Morbi fringilla ipsum ut metus finibus, a suscipit enim dapibus. Aenean ultricies tellus in vulputate porta. Suspendisse eget malesuada dolor, nec porta lectus. Donec ut congue ligula. Curabitur fringilla rhoncus velit, vel vehicula lectus imperdiet et. Mauris a pharetra ipsum. Curabitur porttitor lectus non sodales imperdiet. Sed lacinia, urna in gravida volutpat, mi massa consectetur nisl, et mollis enim ligula et sem.\cite[S. 13ff]{Morbiac.20.02.1500}
+
+\subsection{Praesent commodo}\label{subsec:PraesentCommodo}
+Praesent commodo lacus ligula, a volutpat sem rhoncus non. Etiam semper libero laoreet lacus tincidunt, vitae semper quam elementum. Proin eget sem lacus. Cras et leo efficitur, posuere ex sed, aliquet nisl. Proin sed tellus eget eros ullamcorper gravida. Maecenas a elit in odio cursus bibendum porttitor vitae velit. Phasellus lorem nisl, faucibus gravida euismod pulvinar, dignissim sed ex. Proin vulputate, ex ut blandit dignissim, lectus libero viverra ligula, ut iaculis orci nibh ut ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam eu elit lorem. Praesent et metus aliquet, venenatis justo eget, cursus quam. In a tristique libero, non tincidunt ex.\footnote{see chapter: \namerefIT{sec:DonecAliquam} \label{foot:Fuß1}}
+
+\subsubsection{Vestibulum}\label{subsubsec:Vestibulum}
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi suscipit accumsan lacus, sit amet feugiat lectus. Interdum et malesuada fames ac ante ipsum primis in \ref{fig:TestImage}. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.3]{Abbildungen/TestImage.jpg}
+\caption{Curabitur vestibulum justo at tempor vestibulum.)\protect\cite{Morbiac.20.02.1500}}
+\label{fig:TestImage}
+\end{figure}
+
+Duis tincidunt, justo ac sollicitudin tempor, urna nunc molestie sem, sed gravida tellus ante vitae tortor. Etiam nec est sapien. Nunc quis blandit felis. Nam eu dui a lacus blandit laoreet\footref{foot:Fuß1} vitae luctus sapien. Nullam porttitor quam vel quam pulvinar efficitur. Sed non lacus purus. Ut sit amet orci lorem. Morbi ullamcorper justo tellus, vel placerat massa fermentum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Morbi nisi velit, rutrum id libero ultrices, volutpat euismod lectus.\cite[S. 1030]{Morbiac.20.02.1500}

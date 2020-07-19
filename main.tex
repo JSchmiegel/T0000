@@ -1,0 +1,102 @@
+\documentclass[a4paper,12pt]{scrreprt}
+
+%\includeonly{Kapitel/000Zusammenfassung,Kapitel/Abkuerzungsverzeichnis}
+
+%*********Packages**************
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{acronym}
+\usepackage{todonotes}
+%\usepackage[disable]{todonotes}
+
+%Literaturverzeichnis
+\usepackage[firstinits=true,bibstyle=ieee,citestyle=numeric-comp,backend=bibtex8]{biblatex}
+\usepackage{url}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburllcpenalty}{8000}
+
+\usepackage{hyperref}
+\usepackage[figure]{hypcap}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage[T1]{fontenc}
+\usepackage[htt]{hyphenat}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{longtable}
+\usepackage[marginal,multiple]{footmisc}
+\usepackage{listings}
+\usepackage{amssymb}
+
+\usepackage{color}
+%********************************
+
+%own Command
+\newcommand{\namerefIT}[1]{\ref{#1} \textit{\nameref{#1}}}
+
+%insert Literaturverzeichnis.bib
+\bibliography{Literaturverzeichnis}
+
+%*********Begin Document*********
+\begin{document}
+
+%define codeblocks
+\lstset{numbers=left, numberstyle=\tiny, breaklines=true, frame=single}
+
+
+%insert Deckblatt
+\begin{spacing}{1}
+		\input{Deckblatt}
+	\end{spacing}
+	\newpage
+
+
+\pagestyle{headings}
+
+\pagenumbering{Roman}
+
+%Insert ./Kapitel/000EidesstattlicheErklaerung.tex
+\include{Kapitel/000EidesstattlicheErklaerung}
+
+%Insert ./Kapitel/000Zusammenfassung.tex
+\addcontentsline{toc}{chapter}{Zusammenfassung}
+\include{Kapitel/000Zusammenfassung}
+
+%Insert ./Kapitel/000Abstract.tex
+\addcontentsline{toc}{chapter}{Abstract}
+\include{Kapitel/000Abstract}
+
+
+%Create Inhaltsverzeichnis
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+%Create Abbildungsverzeichnis
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+%Create Tabellenverzeichnis
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+
+%Insert ./Kapitel/000Abkuerzungsverzeichnis.tex
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+\include{Kapitel/000Abkuerzungsverzeichnis}
+
+%Change Pagenumbering to 1,2,...
+\pagenumbering{arabic}
+
+%Insert Kapitel which are in ./Kapitel/*
+\include{Kapitel/001BeispielKapitel}
+
+%Add Literaturverzeichnis
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography[title=Literaturverzeichnis]
+
+%Insert ./Kapitel/Anhang.tex
+\appendix
+\include{Kapitel/Anhang}
+
+\end{document}
