@@ -1,12 +1,13 @@
-# Repository T0_0000: <br> LaTeX
+# Repository T0000: <br> LaTeX Vorlage für T-Arbeiten an der DHBW Campus Horb
 
-## Description
-Dies ist eine selbst erstellte Vorlage für die 
+## Description:
+Diese Repository stellt LaTeX-Vorlage für die T-Arbeiten an der DHBW Campus Horb.
 
+## Ordnerstruktur:
++ **./Abbildungen/*:** Ordner in dem alle Abbildungen abgespeicher werden können.
++ **./CitaviT0000Logging/*:** Citavi Beispielprojekt für die T0000
++ **./Kapitel/*:** Übersicht der Unterkapitel der T0000
 
-## Ordnerstruktur
-+ .\Anmeldung\\*: Anmeldung für die T3_2000
-+ .\Arbeit\\*: LaTeX Projekt für die T3_2000
-+ .\CitaviT0000Logging\\*: Citavi Beispielprojekt für die T0_0000
-+ .\Plannung\\*: Zeitplan
-+ .\Umsetzung\\*: Umsetzung des Logging-Systems
+## Besondere Befehle:
++ **\nameref{\<linkname>}:** Verlinkung auf ein Kapitel, welches mit Hilfe von \label{\<linkname>} mit einem Link versehen wurde
++ **\begin{anhang} \caption{} ... \end{anhang}:** Einfügen eines Anhangs, der im Anhangsverzeichnis aufgeführt wird
