@@ -30,7 +30,6 @@
 \usepackage{amssymb}
 \usepackage{color}
 \usepackage{newfloat}
-%********************************
 
 %Anhang-Environment
 \DeclareFloatingEnvironment[fileext=loAnhang, listname={Anhang}, placement=htbp]{anhang}
@@ -38,6 +37,14 @@
 
 %own Command Link to Chapter
 \newcommand{\nameref}[1]{\ref{#1} \textbf{\nameref{#1}}}
+%********************************
+
+\hypersetup{
+	pdfauthor={<Author>},
+	pdftitle={<Title>},
+	pdfsubject={<Subtitle>},
+	pdfkeywords={<Keywords>}
+}
 
 %insert Literaturverzeichnis.bib
 \bibliography{Literaturverzeichnis}
