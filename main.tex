@@ -30,13 +30,14 @@
 \usepackage{amssymb}
 \usepackage{color}
 \usepackage{newfloat}
+\usepackage{float}
 
 %Anhang-Environment
 \DeclareFloatingEnvironment[fileext=loAnhang, listname={Anhang}, placement=htbp]{anhang}
 \renewcommand{\theanhang}{\Alph{anhang}.}
 
 %own Command Link to Chapter
-\newcommand{\nameref}[1]{\ref{#1} \textbf{\nameref{#1}}}
+\newcommand{\chapterref}[1]{\ref{#1} \textbf{\nameref{#1}}}
 %********************************
 
 \hypersetup{
