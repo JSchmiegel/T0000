@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt,parskip=half,]{scrreprt}
 
-%\includeonly{Kapitel/000Zusammenfassung,Kapitel/Abkuerzungsverzeichnis}
+%\includeonly{Kapitel/000Zusammenfassung,Kapitel/000Abkuerzungsverzeichnis}
 
 %*********Packages**************
 \usepackage[utf8]{inputenc}
@@ -23,8 +23,10 @@
 \usepackage{newfloat}
 \usepackage{float}
 \usepackage[framemethod=TikZ]{mdframed}
+
+%If you want to disable the todos, comment \usepackage{todonotes} and uncomment \usepackage[disable]{todonotes}
 \usepackage{todonotes}
-%\usepackage[disable]{todonotes}
+%\usepackage[disable]{todonotes} 
 
 %Literaturverzeichnis
 \usepackage[firstinits=true,bibstyle=ieee,citestyle=numeric-comp,backend=bibtex8]{biblatex}
@@ -32,11 +34,11 @@
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburllcpenalty}{8000}
 
-%Anhang-Environment
+%declare Anhang-Environment
 \DeclareFloatingEnvironment[fileext=loAnhang, listname={Anhang}, placement=htbp]{anhang}
 \renewcommand{\theanhang}{\Alph{anhang}.}
 
-%insert kischt
+%declare Kischt-Environment
 \definecolor{kischtline}{RGB}{0,157,224}%RGB-Wert BOYSEN
 \newenvironment{kischt}[1]{
 	\mdfsetup{
@@ -52,15 +54,30 @@
 	\begin{mdframed}[]\relax
 }{\end{mdframed}}
 
+%define settings (Origin: https://github.com/dhbw-horb/latexVorlage)
+\newcommand{\setting}[1]{%
+  \expandafter\newcommand\csname #1\endcsname{}
+  \expandafter\newcommand\csname setze#1\endcsname[1]{\expandafter\renewcommand\csname#1\endcsname{##1}}
+}
+\newcommand{\langstr}[1]{\setting{lang#1}}
+\input{Backstage/settings_list} 
+\input{settings}
+
+
 %own Command Link to Chapter
 \newcommand{\chapterref}[1]{\ref{#1} \textbf{\nameref{#1}}}
+
 %********************************
 
+%set metadata
 \hypersetup{
-	pdfauthor={<Author>},
-	pdftitle={<Title>},
-	pdfsubject={<Subtitle>},
-	pdfkeywords={<Keywords>}
+	pdfauthor={\autor},
+	pdftitle={\titel},
+	pdfsubject={\arbeit},
+	%to add keywords: use for everykeyword {} around it
+	pdfkeywords={\arbeit}{\titel},
+	pdfpagemode=UseOutlines,
+	pdfdisplaydoctitle=true
 }
 
 %insert Literaturverzeichnis.bib
@@ -75,9 +92,9 @@
 
 %insert Deckblatt
 \begin{spacing}{1}
-		\input{Deckblatt}
-	\end{spacing}
-	\newpage
+\include{Backstage/Deckblatt}
+\end{spacing}
+\newpage
 
 
 \pagestyle{headings}
