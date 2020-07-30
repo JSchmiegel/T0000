@@ -14,8 +14,9 @@ Zur Bearbeitung empfehle ich folgende Werkzeuge:
 + **./Kapitel/*:** Übersicht der Unterkapitel der T0000
 
 ## Besondere Befehle:
-+ **\nameref{\<linkname>}:** Verlinkung auf ein Kapitel, welches mit Hilfe von \label{\<linkname>} mit einem Link versehen wurde
-+ **\begin{anhang} \caption{} ... \end{anhang}:** Einfügen eines Anhangs, der im Anhangsverzeichnis aufgeführt wird
++ **\chapterref{\<linkname>}:** Verlinkung auf ein Kapitel, welches mit Hilfe von \label{\<linkname>} mit einem Link versehen wurde
++ **\begin{anhang} \caption{} ... \end{anhang}:** Einfügen eines Anhangs, der im Anhangsverzeichnis aufgeführt wird (siehe ./Kapitel/001BeispielKapitel)
++ **\begin{kischt}{\<title>} ... \end{kischt}:** Einfügen einer blau umrandeten Box für z.B. Theoreme, Hypothesen, Hinweise, etc. (siehe ./Kapitel/001BeispielKapitel)
 
 ## Sperrvermerk einfügen
 Um den Sperrvermerk einzufügen muss folgende Zeile auskommentiert werden in dem % entfernt wird.
