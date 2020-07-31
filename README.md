@@ -26,7 +26,7 @@ Um wiederauftretende Konstanten, wie Autor, Titel, Matrikelnummer, etc. einzuste
 + **\begin{kischt}{\<title>} ... \end{kischt}:** Einfügen einer blau umrandeten Box für z.B. Theoreme, Hypothesen, Hinweise, etc. (siehe **./Kapitel/001BeispielKapitel**)
 
 ## Sperrvermerk einfügen
-Um den Sperrvermerk einzufügen muss folgende Zeile auskommentiert werden in dem % entfernt wird.
+Um den Sperrvermerk einzufügen muss in folgender Zeile % entfernt werden.
 >%\include{Kapitel/000Sperrvermerk}
 
 ## Kompilieren
