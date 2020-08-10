@@ -1,7 +1,7 @@
 # Repository T0000: <br> LaTeX Vorlage für T-Arbeiten an der DHBW Campus Horb
 
 ## Description:
-Diese Repository stellt LaTeX-Vorlage für die T-Arbeiten an der DHBW Campus Horb.
+Dieses Repository stellt eine LaTeX-Vorlage für die T-Arbeiten an der DHBW Campus Horb dar.
 
 Zur Bearbeitung empfehle ich folgende Werkzeuge:
 + **LaTeX-Installation:** [miktex.org](https://miktex.org/download)
@@ -10,10 +10,9 @@ Zur Bearbeitung empfehle ich folgende Werkzeuge:
 
 ## Dateistruktur:
 + **./main.tex:** Hauptdokument
-+ **./Abbildungen/*:** Ordner in dem alle Abbildungen abgespeicher werden können.
-+ **./Anhang/*:** Ordner in dem alle Anhänge abgespeicher werden
++ **./Abbildungen/*:** Ordner in dem alle Abbildungen abgespeichert werden können
++ **./Anhang/*:** Ordner in dem alle Anhänge abgespeichert werden können
 + **./Backstage/*:** This is called a 'neuralyzer'. A gift from some friends from out of town. The red eye here isolates ...
-+ **./CitaviT0000Logging/*:** Citavi Beispielprojekt für die T0000
 + **./Kapitel/*:** Übersicht der Unterkapitel der T0000
 + **./compile.ps1:** Powershell-Script zur manuellen Kompilierung 
 
