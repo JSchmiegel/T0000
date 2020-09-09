@@ -108,30 +108,30 @@
 %\include{Kapitel/000Sperrvermerk}
 
 %Insert ./Kapitel/000Zusammenfassung.tex
-\addcontentsline{toc}{chapter}{Zusammenfassung}
 \include{Kapitel/000Zusammenfassung}
+\addcontentsline{toc}{chapter}{Zusammenfassung}
 
 %Insert ./Kapitel/000Abstract.tex
-\addcontentsline{toc}{chapter}{Abstract}
 \include{Kapitel/000Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
 
 
 %Create Inhaltsverzeichnis
-\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 \setcounter{tocdepth}{3}
 \tableofcontents
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 
 %Create Abbildungsverzeichnis
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 
 %Create Tabellenverzeichnis
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 
 %Insert ./Kapitel/000Abkuerzungsverzeichnis.tex
-\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 \include{Kapitel/000Abkuerzungsverzeichnis}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 
 %Change Pagenumbering to 1,2,...
 \pagenumbering{arabic}
@@ -141,14 +141,14 @@
 
 
 %Add Literaturverzeichnis
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
 \printbibliography[title=Literaturverzeichnis]
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
 
 %Insert ./Kapitel/Anhang.tex
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{Anhang}
 \listofanhang
+\addcontentsline{toc}{chapter}{Anhang}
 \include{Kapitel/Anhang}
 
 \end{document}
