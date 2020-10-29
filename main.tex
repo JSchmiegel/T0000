@@ -109,17 +109,15 @@
 
 %Insert ./Kapitel/000Zusammenfassung.tex
 \include{Kapitel/000Zusammenfassung}
-\addcontentsline{toc}{chapter}{Zusammenfassung}
 
 %Insert ./Kapitel/000Abstract.tex
 \include{Kapitel/000Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
 
 
 %Create Inhaltsverzeichnis
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 \setcounter{tocdepth}{3}
 \tableofcontents
-\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 
 %Create Abbildungsverzeichnis
 \listoffigures
@@ -131,7 +129,6 @@
 
 %Insert ./Kapitel/000Abkuerzungsverzeichnis.tex
 \include{Kapitel/000Abkuerzungsverzeichnis}
-\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 
 %Change Pagenumbering to 1,2,...
 \pagenumbering{arabic}
@@ -148,7 +145,6 @@
 \cleardoublepage
 \phantomsection
 \listofanhang
-\addcontentsline{toc}{chapter}{Anhang}
 \include{Kapitel/Anhang}
 
 \end{document}
