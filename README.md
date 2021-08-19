@@ -22,7 +22,7 @@ Um wiederauftretende Konstanten, wie Autor, Titel, Matrikelnummer, etc. einzuste
 ## Besondere Befehle:
 + **\chapterref{\<linkname>}:** Verlinkung auf ein Kapitel, welches mit Hilfe von \label{\<linkname>} mit einem Link versehen wurde
 + **\begin{anhang} \caption{} ... \end{anhang}:** Einfügen eines Anhangs, der im Anhangsverzeichnis aufgeführt wird (siehe **./Kapitel/001BeispielKapitel**)
-+ **\begin{kischt}{\<title>} ... \end{kischt}:** Einfügen einer blau umrandeten Box für z.B. Theoreme, Hypothesen, Hinweise, etc. (siehe **./Kapitel/001BeispielKapitel**)
++ **\begin{kischt}{\<title>} ... \end{kischt}:** Einfügen einer blau umrandeten Box für z. B. Theoreme, Hypothesen, Hinweise, etc. (siehe **./Kapitel/001BeispielKapitel**)
 
 ## Sperrvermerk einfügen
 Um den Sperrvermerk einzufügen muss der Kommentar in der folgenden Zeile (durch das Entfernen des %) aufgehoben werden.
