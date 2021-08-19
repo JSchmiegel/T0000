@@ -99,13 +99,15 @@
 
 \pagestyle{headings}
 
-\pagenumbering{Roman}
+\pagenumbering{gobble}
 
 %Insert ./Kapitel/000EidesstattlicheErklaerung.tex
 \include{Backstage/EidesstattlicheErklaerung}
 
 %Insert ./Kapitel/000Sperrvermerk.tex
-%\include{Kapitel/000Sperrvermerk}
+% \include{Kapitel/000Sperrvermerk}
+
+\pagenumbering{Roman}
 
 %Insert ./Kapitel/000Zusammenfassung.tex
 \include{Kapitel/000Zusammenfassung}
