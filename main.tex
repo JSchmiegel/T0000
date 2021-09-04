@@ -34,6 +34,9 @@
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburllcpenalty}{8000}
 
+%prevent footnote running over second page
+\interfootnotelinepenalty=10000
+
 %declare Anhang-Environment
 \DeclareFloatingEnvironment[fileext=loAnhang, listname={Anhang}, placement=htbp]{anhang}
 \renewcommand{\theanhang}{\Alph{anhang}.}
@@ -117,9 +120,9 @@
 
 
 %Create Inhaltsverzeichnis
-\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 \setcounter{tocdepth}{3}
 \tableofcontents
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 
 %Create Abbildungsverzeichnis
 \listoffigures
@@ -139,13 +142,18 @@
 \include{Kapitel/001BeispielKapitel}
 
 
+\pagenumbering{Roman}
+
 %Add Literaturverzeichnis
-\printbibliography[title=Literaturverzeichnis]
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography[title=Literaturverzeichnis]
 
 %Insert ./Kapitel/Anhang.tex
 \cleardoublepage
 \phantomsection
+\addcontentsline{toc}{chapter}{Anhang}
 \listofanhang
 \include{Kapitel/Anhang}
 
